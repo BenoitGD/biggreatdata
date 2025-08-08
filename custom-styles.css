@@ -1,4 +1,3 @@
-<style>
 .zc-pb-tile-card, .zpcontent-wrapper div.zpelement-wrapper, .zc-pb-page-content-wrapper {
     overflow: visible !important;
 }
@@ -116,4 +115,3 @@ td {
 tr:not(.custom_subheader):has(:not(th)):hover {
   --hover: var(--on);
 }
-</style>

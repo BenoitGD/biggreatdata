@@ -1,0 +1,121 @@
+<style>
+.zc-pb-tile-card, .zpcontent-wrapper div.zpelement-wrapper, .zc-pb-page-content-wrapper {
+    overflow: visible !important;
+}
+.sticky1 {
+	top: 0;
+	position: sticky;
+	z-index: 1;
+}
+.sticky2 {
+	top: 62px;
+	z-index: 1;
+	position: sticky;
+    border-bottom: 1px solid #eee!important;
+}
+.custom_tab {
+    display: flex;
+	justify-content: space-around;
+}
+.custom_tab > a {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+.custom_tab > a:hover {
+    background: #f4f8fb;
+}
+.custom_nav {
+	margin: 5px 10px 10px 10px;
+    float: right;
+}
+.custom_nav a {
+    padding: 10px;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.custom_buttons {
+	float: right;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 15px;
+}
+/* CUSTOM TABLE CSS */
+.custom_table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.custom_table td:nth-child(-n+4) {
+    text-align: left;
+}
+.custom_table th {
+    background: #ffffff;
+    //font-size: 16px;
+    font-weight: bold;
+    padding: 5px 8px;
+}
+.custom_subheader {
+    background: #e4e8ec !important;
+    border-bottom: 1px solid #eee!important;
+	position: sticky;
+    top: 91px;
+}
+.custom_table tr {
+	height: 30px;
+    border-bottom: 1px solid #eee!important;
+}
+.custom_table tr td {
+	padding: 5px 8px;
+    border-right: 1px solid #f9f9f9!important;
+}
+.custom_table tr.indent-row td {
+    padding-left: 28px;
+}
+/* SPAN HOVER BEHAVIOR */
+.custom_table td:hover span {
+    visibility: visible;
+}
+.custom_table td span {
+    visibility: hidden;
+}
+.custom_table a {
+    display: block;
+}
+.custom_table_col sub {
+    color: #888888;
+}
+/* ALERT STYLING */
+.alert_green {
+	background-color: green;
+}
+.alert_red {
+	background-color: red;
+}
+/* CELL STYLING */
+.custom_table td.required
+{
+    background: yellow;
+}
+.custom_table td.special
+{
+    background-color: cyan;
+}
+/* HOVER BEHAVIOR */
+:root {
+  --on: #f4f8fb;
+  --off: transparent;
+}
+table {
+  --hover: var(--off);
+}
+table:has(td:nth-child(5):hover) td:nth-child(5),table:has(td:nth-child(6):hover) td:nth-child(6),table:has(td:nth-child(7):hover) td:nth-child(7),table:has(td:nth-child(8):hover) td:nth-child(8),table:has(td:nth-child(9):hover) td:nth-child(9),table:has(td:nth-child(10):hover) td:nth-child(10),table:has(td:nth-child(11):hover) td:nth-child(11) {
+  --hover: var(--on);
+}
+td {
+  background-color: var(--hover);
+}
+tr:not(.custom_subheader):has(:not(th)):hover {
+  --hover: var(--on);
+}
+</style>

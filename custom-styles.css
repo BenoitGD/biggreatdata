@@ -69,7 +69,8 @@
 	padding: 5px 8px;
     border-right: 1px solid #f9f9f9!important;
 }
-.custom_table tr.indent-row td {
+/* SPAN HOVER BEHAVIOR */
+.indent-row td:first-child {
     padding-left: 28px;
 }
 /* SPAN HOVER BEHAVIOR */

@@ -1,12 +1,12 @@
 <style>
 .zc-pb-tile-card, .zpcontent-wrapper div.zpelement-wrapper, .zc-pb-page-content-wrapper {
     overflow: visible !important;
-	background: red;
 }
 .sticky1 {
 	top: 0;
 	position: sticky;
 	z-index: 1;
+	background: red;
 }
 .sticky2 {
 	top: 62px;

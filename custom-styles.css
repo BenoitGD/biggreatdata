@@ -77,9 +77,6 @@
 .custom_table td span {
     visibility: hidden;
 }
-.custom_table a {
-    display: block;
-}
 .custom_table_col sub {
     color: #888888;
 }

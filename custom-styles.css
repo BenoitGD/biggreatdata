@@ -50,6 +50,7 @@
     //font-size: 16px;
     font-weight: bold;
     padding: 5px 8px;
+	border-right: 1px solid #fbfbfb !important;
 }
 .custom_subheader {
     background: #e4e8ec !important;

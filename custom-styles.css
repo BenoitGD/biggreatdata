@@ -92,9 +92,9 @@
 {
     background: yellow;
 }
-.custom_table td.required
+.custom_table td.none
 {
-    background: grey;
+    background: lightgrey;
 }
 .custom_table td.special
 {

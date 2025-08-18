@@ -92,9 +92,17 @@
 {
     background: yellow;
 }
+.custom_table td.required
+{
+    background: grey;
+}
 .custom_table td.special
 {
     background-color: cyan;
+}
+.custom_table td.new
+{
+    background: cyan;
 }
 /* HOVER BEHAVIOR */
 :root {

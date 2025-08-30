@@ -81,6 +81,9 @@
     color: #888888;
 }
 /* ALERT STYLING */
+.alert_grey {
+	background-color: lightgrey;
+}
 .alert_green {
 	background-color: green;
 }

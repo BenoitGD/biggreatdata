@@ -114,9 +114,6 @@
 table {
   --hover: var(--off);
 }
-table:has(td:nth-child(5):hover) td:nth-child(5),table:has(td:nth-child(6):hover) td:nth-child(6),table:has(td:nth-child(7):hover) td:nth-child(7),table:has(td:nth-child(8):hover) td:nth-child(8),table:has(td:nth-child(9):hover) td:nth-child(9),table:has(td:nth-child(10):hover) td:nth-child(10),table:has(td:nth-child(11):hover) td:nth-child(11) {
-  --hover: var(--on);
-}
 td {
   background-color: var(--hover);
 }

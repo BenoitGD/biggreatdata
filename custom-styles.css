@@ -85,10 +85,10 @@
 	background-color: lightgrey;
 }
 .alert_green {
-	background-color: green;
+	background-color: lightgreen;
 }
 .alert_red {
-	background-color: red;
+	background-color: lightcoral;
 }
 /* CELL STYLING */
 .custom_table td.required

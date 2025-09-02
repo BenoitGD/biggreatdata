@@ -17,13 +17,8 @@
     display: flex;
 	justify-content: space-around;
 }
-.custom_tab > a {
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-}
-.custom_tab > a:hover {
-    background: #f4f8fb;
+.custom_tab a {
+    display: block;
 }
 .view-options li {
     margin-right: 10px;

@@ -82,6 +82,9 @@
 .alert_green {
 	background-color: lightgreen;
 }
+.alert_orange {
+	background-color: lightsalmon;
+}
 .alert_red {
 	background-color: lightcoral;
 }

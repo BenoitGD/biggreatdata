@@ -1,87 +1,87 @@
 /* ---------------------------------------------------
    Canadian Nutrition Facts Table – 80 mm
    Bilingual Standard Format (Figure 3.1(B))
-   Scoped to .nft so it won't affect the rest of the app
+   Scoped to .nft so it won't affect the rest of Zoho
    --------------------------------------------------- */
 
 .nft {
-    width: 302px;                  /* ≈ 80 mm at 96 dpi */
+    width: 302px; /* ≈ 80 mm at 96 dpi */
     border: 2px solid #000;
-    padding: 6px 6px 8px 6px;
+    padding: 4px 6px 6px 6px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background: #ffffff;
     color: #000000;
     box-sizing: content-box;
 }
 
-/* Make sure everything inside behaves predictably */
 .nft * {
     box-sizing: border-box;
 }
 
-/* ---------------------------------
-   Title: "Nutrition Facts" / "Valeur nutritive"
-   stacked like the CFIA example
-   --------------------------------- */
+/* --------------------
+   Title
+   -------------------- */
 .nft .title {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.1;
     margin: 0 0 2px 0;
 }
 
-/* If you use spans inside title, this will stack them nicely */
 .nft .title span {
-    display: block;
+    display: block;  /* Nutrition Facts / Valeur nutritive stacked */
 }
 
-/* ---------------------------------
-   Serving size line
-   --------------------------------- */
+/* --------------------
+   Serving line
+   -------------------- */
 .nft .serving {
     font-size: 11px;
-    margin: 0 0 4px 0;
+    margin: 0 0 3px 0;
 }
 
-/* ---------------------------------
+/* --------------------
    Horizontal rules
-   --------------------------------- */
+   -------------------- */
 .nft .thick {
     border-top: 3px solid #000;
-    margin: 4px 0;
+    margin: 3px 0;
 }
 
 .nft .thin {
     border-top: 1px solid #000;
-    margin: 4px 0;
+    margin: 3px 0;
 }
 
-/* ---------------------------------
-   Calories row
-   --------------------------------- */
+/* --------------------
+   Calories bar + %DV header
+   (single row, thick bottom line)
+   -------------------- */
 .nft .cal {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    padding: 2px 0 1px 0;
+    border-bottom: 3px solid #000; /* thick bar under calories */
+    margin: 0 0 2px 0;
+}
+
+.nft .callabel {
     font-size: 16px;
     font-weight: 700;
-    margin: 1px 0 2px 0;
 }
 
-/* ---------------------------------
-   "% Daily Value" header
-   (right-aligned like in Figure 3.1(B))
-   --------------------------------- */
 .nft .dvhead {
-    text-align: right;
+    font-size: 9px;
     font-weight: 700;
-    font-size: 11px;
-    margin: 2px 0 2px 0;
+    text-align: right;
+    line-height: 1.1;
+    margin-left: 6px;
 }
 
-/* ---------------------------------
+/* --------------------
    Main nutrient rows
-   --------------------------------- */
+   -------------------- */
 .nft .row {
     display: flex;
     justify-content: space-between;
@@ -89,26 +89,26 @@
     margin: 1px 0;
 }
 
-/* ---------------------------------
-   Sub-rows (indented lines)
-   --------------------------------- */
+/* --------------------
+   Sub-rows (indented)
+   -------------------- */
 .nft .sub {
     display: flex;
     justify-content: space-between;
     font-size: 10px;
-    margin: 1px 0 1px 12px;  /* indent similar to CFIA template */
+    margin: 1px 0 1px 12px; /* indentation similar to CFIA figure */
 }
 
-/* %DV numbers column */
+/* %DV cell */
 .nft .dv {
     font-weight: 700;
-    min-width: 32px;          /* keeps the % column aligned */
+    min-width: 32px;
     text-align: right;
 }
 
-/* ---------------------------------
+/* --------------------
    Footnote
-   --------------------------------- */
+   -------------------- */
 .nft .foot {
     font-size: 9px;
     margin-top: 6px;

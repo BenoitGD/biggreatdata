@@ -1,3 +1,4 @@
+
   .nutrition-label {
     width: 350px;
     border: 3px solid #000;
@@ -9,12 +10,12 @@
   .nutrition-label h1 {
     font-size: 26px;
     margin: 0;
-    font-weight: 700;
+    font-weight: 800;
   }
   .nutrition-label h2 {
     font-size: 26px;
     margin: 0 0 6px 0;
-    font-weight: 700;
+    font-weight: 800;
   }
   .serving {
     margin-bottom: 6px;
@@ -33,15 +34,16 @@
     align-items: flex-end;
     font-weight: 700;
     font-size: 18px;
-    margin: 2px 0 3px;
+    margin: 2px 0 5px;
   }
   .calories-line .left {
-    border-bottom: 2px solid #000;
+    border-bottom: 3px solid #000;
     padding-bottom: 1px;
   }
   .dv-header {
     font-size: 10px;
     text-align: right;
+	padding-bottom: 4px;
   }
   .nutrient-row {
     display: flex;
@@ -56,7 +58,7 @@
     font-weight: 400;
   }
   .nutrient-row.indent-plus {
-    padding-left: 18px;
+    padding-left: 8px;
   }
   .nutrient-row .value {
     font-weight: 400;

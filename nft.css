@@ -1,153 +1,71 @@
-/* ---------------------------------------------------
-   Canadian Nutrition Facts Table – Standard 80 mm
-   Based on Figures 1.1(E) + 3.1(B)
-   All styles scoped under .nft
-   --------------------------------------------------- */
-
-.nft {
-    width: 302px; /* ≈ 80 mm at 96 dpi */
-    border: 1px solid #000; /* 1-point outer rule */
-    padding: 6px 7px 7px 7px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background: #fff;
-    color: #000;
-    font-size: 11px; /* base ≈ 8-pt normal-width font */
-    box-sizing: content-box;
-}
-
-.nft * {
-    box-sizing: border-box;
-}
-
-/* --------------------
-   Title
-   Heading 13-pt bold (approx.)
-   -------------------- */
-
-.nft .title {
-    margin: 0 0 2px 0;
-    line-height: 1.1;
-}
-
-.nft .title span:first-child {
-    display: block;
+  .nutrition-label {
+    width: 350px;
+    border: 3px solid #000;
+    padding: 8px 10px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .nutrition-label h1 {
+    font-size: 26px;
+    margin: 0;
     font-weight: 700;
-    font-size: 17px; /* ~13-pt */
-}
-
-.nft .title span:last-child {
-    display: block;
+  }
+  .nutrition-label h2 {
+    font-size: 26px;
+    margin: 0 0 6px 0;
     font-weight: 700;
-    font-size: 17px;
-}
-
-/* --------------------
-   Serving line
-   9-pt with 11-pt leading
-   -------------------- */
-.nft .serving {
-    font-size: 12px;   /* ~9-pt */
-    margin: 0 0 4px 0; /* extra leading under heading */
-}
-
-/* --------------------
-   Rules
-   Thin = 0.5-pt, Thick = 2.5-pt (approx)
-   -------------------- */
-.nft .thin {
-    border-top: 1px solid #000;
-    margin: 3px 0;
-}
-
-.nft .thick {
+  }
+  .serving {
+    margin-bottom: 6px;
+  }
+  .thick-rule {
     border-top: 3px solid #000;
     margin: 3px 0;
-}
-
-/* --------------------
-   Calories bar + %DV header
-   Mirrors 1.1(E) & 3.1(B)
-   -------------------- */
-
-.nft .cal {
+  }
+  .thin-rule {
+    border-top: 1px solid #000;
+    margin: 3px 0;
+  }
+  .calories-line {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 1px 0 1px 0;
-    margin: 0 0 2px 0;
-}
-
-.nft .cal-left {
-    display: inline-flex;
-    align-items: baseline;
-    gap: 4px;
-}
-
-.nft .cal-label {
-    font-size: 14px;   /* 10-pt bold type */
+    align-items: flex-end;
     font-weight: 700;
-}
-
-.nft .cal-value {
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.nft .cal-right {
+    font-size: 18px;
+    margin: 2px 0 3px;
+  }
+  .calories-line .left {
+    border-bottom: 2px solid #000;
+    padding-bottom: 1px;
+  }
+  .dv-header {
+    font-size: 10px;
     text-align: right;
-    margin-left: 6px;
-}
-
-.nft .dvhead-line {
-    display: block;
-    font-size: 9px;    /* smaller header text */
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-/* --------------------
-   Nutrient rows
-   -------------------- */
-
-.nft .row {
+  }
+  .nutrient-row {
     display: flex;
     justify-content: space-between;
-    font-size: 11px;   /* main nutrients */
     margin: 1px 0;
-}
-
-/* first row after Calories – extra top leading (~7-pt) */
-.nft .first-row {
-    margin-top: 6px;
-}
-
-.nft .sub {
-    display: flex;
-    justify-content: space-between;
-    font-size: 10px;  /* sub-nutrients slightly smaller */
-    margin: 1px 0;
-    padding-left: 12px; /* 6-point indent analogue */
-}
-
-/* % DV column */
-.nft .dv {
+  }
+  .nutrient-row .name {
     font-weight: 700;
-    min-width: 34px;
+  }
+  .nutrient-row.indent {
+    padding-left: 12px;
+    font-weight: 400;
+  }
+  .nutrient-row.indent-plus {
+    padding-left: 18px;
+  }
+  .nutrient-row .value {
+    font-weight: 400;
+  }
+  .nutrient-row .dv {
+    min-width: 30px;
     text-align: right;
-    padding-left: 6px;
-}
-
-/* --------------------
-   Footnote
-   6.5-pt type approx, words “little/lot/peu/beaucoup” in bold
-   -------------------- */
-
-.nft .foot {
-    font-size: 9px;
-    margin-top: 7px;
-    line-height: 1.25;
-}
-
-.nft .foot strong {
-    font-weight: 700;
-}
+  }
+  .footnote {
+    font-size: 10px;
+    margin-top: 4px;
+  }

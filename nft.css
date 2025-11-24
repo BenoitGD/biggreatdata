@@ -1,70 +1,100 @@
-.nft-ca {
-  width: 302px; /* 80 mm at 96 dpi ≈ 302 px */
-  border: 2px solid #000;
-  padding: 8px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  line-height: 1.2;
-  background: #fff;
+/* ---------------------------------------------------
+   Canadian Nutrition Facts Table (80mm version)
+   CFIA/Health Canada Compliant
+   External stylesheet for Zoho Creator
+   --------------------------------------------------- */
+
+.nft {
+    width: 302px;                  /* 80 mm at 96 dpi */
+    border: 2px solid #000;
+    padding: 8px;
+    font-family: Helvetica, Arial, sans-serif;
+    background: #ffffff;
+    color: #000000;
 }
 
-/* Title */
-.nft-title {
-  font-size: 22px;
-  font-weight: 700;
+/* --------------------------
+   TITLE
+   -------------------------- */
+.title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 4px 0;
 }
 
-/* Serving size */
-.nft-serving {
-  margin-top: 4px;
-  font-size: 14px;
+/* --------------------------
+   SERVING SIZE
+   -------------------------- */
+.serving {
+    font-size: 14px;
+    margin-bottom: 6px;
 }
 
-/* Lines */
-.thick-line {
-  border-top: 4px solid #000;
-  margin: 6px 0;
+/* --------------------------
+   LINES
+   -------------------------- */
+.thick {
+    border-top: 4px solid #000;
+    margin: 6px 0;
 }
 
-.thin-line {
-  border-top: 1px solid #000;
-  margin: 6px 0;
+.thin {
+    border-top: 1px solid #000;
+    margin: 6px 0;
 }
 
-/* Main rows */
-.n-row {
-  display: flex;
-  justify-content: space-between;
-  margin: 2px 0;
+/* --------------------------
+   CALORIES
+   -------------------------- */
+.cal {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 3px;
 }
 
-.sub-row {
-  display: flex;
-  justify-content: space-between;
-  margin: 2px 0;
-  padding-left: 20px;
-  font-size: 12px;
+/* --------------------------
+   %DV HEADER
+   -------------------------- */
+.dvhead {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 4px;
 }
 
-.calories-row {
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  font-weight: 700;
+/* --------------------------
+   MAIN ROWS
+   -------------------------- */
+.row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 2px 0;
 }
 
-.dv-header {
-  font-weight: 700;
-  margin-bottom: 4px;
+/* --------------------------
+   SUB ROWS (indented)
+   -------------------------- */
+.sub {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 2px 0 2px 15px;
 }
 
+/* --------------------------
+   %DV numbers
+   -------------------------- */
 .dv {
-  font-weight: 700;
+    font-weight: 700;
 }
 
-/* Footnote */
-.footnote {
-  margin-top: 10px;
-  font-size: 11px;
-  line-height: 1.2;
+/* --------------------------
+   FOOTNOTE
+   -------------------------- */
+.foot {
+    font-size: 11px;
+    margin-top: 10px;
+    line-height: 1.2;
 }

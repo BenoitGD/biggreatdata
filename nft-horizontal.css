@@ -1,106 +1,88 @@
-/* ==========================================================
-   Bilingual Horizontal Nutrition Facts Table (CFIA Figure 4.1(B))
-   ========================================================== */
-
-.nutrition-horizontal {
-    width: 450px; /* horizontal format requires ~92mm+ */
-    border: 3px solid #000;
-    padding: 8px 10px 10px;
-    background: white;
+  body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    line-height: 1.15;
-}
+  }
 
-.nutrition-horizontal h1,
-.nutrition-horizontal h2 {
-    font-size: 22px;
-    margin: 0;
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-.nutrition-horizontal h2 {
-    margin-bottom: 6px;
-}
-
-.nutrition-horizontal .serving {
-    font-size: 12px;
-    margin-bottom: 6px;
-}
-
-.nutrition-horizontal .thick-rule {
-    border-top: 3px solid #000;
-    margin: 4px 0;
-}
-
-.nutrition-horizontal .thin-rule {
-    border-top: 1px solid #000;
-    margin: 4px 0;
-}
-
-/* ---------------------------
-   Calories Bar
-   --------------------------- */
-
-.nutrition-horizontal .calories-row {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
+  .nutrition-box {
+    width: 1000px;
+    border: 3px solid #000;
+    padding: 12px 18px 18px;
     font-size: 16px;
-    margin: 2px 0 3px;
-}
+    line-height: 1.2;
+  }
 
-.nutrition-horizontal .cal-left {
-    border-bottom: 3px solid #000;
-    padding-bottom: 2px;
-}
+  .left-section {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 20px;
+  }
 
-.nutrition-horizontal .cal-dvhead {
-    font-size: 10px;
+  .right-section {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  h2 {
+    margin: 0 0 14px 0;
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .serving-info {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .calories {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 20px 0 6px;
+  }
+
+  .definition {
+    font-size: 14px;
+  }
+
+  .dv-header {
     text-align: right;
-    line-height: 1.1;
-}
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #000;
+  }
 
-/* ---------------------------
-   Horizontal 3-Column Rows
-   --------------------------- */
+  .nutrient-block {
+    margin-top: 10px;
+  }
 
-.nutrition-horizontal .h-row {
+  .nut-row {
     display: flex;
     justify-content: space-between;
-    margin: 1px 0;
-}
+    padding: 2px 0;
+  }
 
-.nutrition-horizontal .col1 {
-    width: 45%;
-}
-
-.nutrition-horizontal .col2 {
-    width: 15%;
-    text-align: right;
+  .nut-left {
     font-weight: 700;
-}
+  }
 
-.nutrition-horizontal .col3 {
-    width: 40%;
-    text-align: left;
-}
-
-/* Indented Sub-Nutrients */
-
-.nutrition-horizontal .indent {
-    padding-left: 12px;
-}
-
-.nutrition-horizontal .indent-plus {
+  .nut-sub {
     padding-left: 20px;
-}
+    font-weight: 400;
+  }
 
-/* Footnote */
+  .divider {
+    border-top: 3px solid #000;
+    margin: 6px 0;
+  }
 
-.nutrition-horizontal .footnote {
-    font-size: 10px;
-    margin-top: 6px;
-    line-height: 1.2;
-}
+  .footnote {
+    margin-top: 14px;
+    font-size: 16px;
+  }

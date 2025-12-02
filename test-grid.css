@@ -1,0 +1,72 @@
+/* --- GRID CONFIG --- */
+.inv-table {
+    width: 100%;
+    display: block;
+    font-family: inherit;
+}
+
+.row {
+    display: grid;
+    grid-template-columns:
+        210px   /* item name */
+        180px   /* supplier */
+        120px   /* cost */
+        100px   /* value */
+        120px   /* stock */
+        160px   /* days */
+        150px   /* incoming */
+        140px   /* weekly */
+        140px;  /* monthly */
+    align-items: center;
+    padding: 6px 4px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Header */
+.inv-header {
+    font-weight: bold;
+    background: #ffffff;
+    position: sticky;
+    top: 62px;
+    z-index: 10;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Supplier collapsible block */
+.supplier-block {
+    margin-top: 10px;
+    display: block;
+}
+
+.supplier-block summary {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 6px;
+    background: #e4e8ec;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.supplier-block[open] summary {
+    background: #dbe2e7;
+}
+
+/* Hover effect */
+.row:hover {
+    background: #f4f8fb;
+}
+
+/* Alerts */
+.alert_red   { background: lightcoral !important; }
+.alert_orange{ background: lightsalmon !important; }
+.alert_green { background: lightgreen !important; }
+.alert_grey  { background: lightgrey !important; }
+
+/* Align left first 2 columns */
+.col.name,
+.col.supplier {
+    text-align: left;
+}
+
+/* Links */
+a { color: inherit; text-decoration: none; }

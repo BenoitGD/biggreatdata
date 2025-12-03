@@ -1,72 +1,164 @@
-/* --- GRID CONFIG --- */
-.inv-table {
-    width: 100%;
-    display: block;
-    font-family: inherit;
+/* critical sticky overrides */
+.custom_table .col:nth-child(-n+2),.custom_table .col:nth-child(-n+2) {text-align: left !important;}
+.custom_table .custom_group .col:nth-last-child(-n+2) {background-color: whitesmoke !important;}
+.zc-pb-tile-card, .zpcontent-wrapper div.zpelement-wrapper, .zc-pb-page-content-wrapper {
+    overflow: visible !important;
 }
+.sticky1 {
+	top: 0;
+	position: sticky;
+	z-index: 2;
+}
+.sticky2 {
+	top: 62px;
+	position: sticky;
+	background: white;
+	font-weight: bold;
+    border-bottom: 1px solid #eee!important;
+	z-index: 2;
+}
+.view-options li {
+    margin-right: 10px;
+}
+.custom_tab {
+    display: flex;
+	justify-content: space-around;
+}
+.custom_table a {
+    display: block;
+}
+.custom_nav a {
+    padding: 10px;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.custom_buttons {
+	float: right;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 15px;
+}
+.disabled {
+    pointer-events: none;
+}
+/* CUSTOM TABLE CSS */
+.custom_table {
+    width: 100%;
+    text-align: center;
+    border-collapse: separate;
+	border-spacing: 0;
+}
+.custom_header {
 
-.row {
+}
+.custom_subheader {
+    top: 91px;
+	position: sticky;
+    padding: 5px 8px;
+	text-align: left;
+    background: #e4e8ec !important;
+	z-index: 1;
+}
+.custom_header, .c-row {
     display: grid;
     grid-template-columns:
-        210px   /* item name */
-        180px   /* supplier */
-        120px   /* cost */
-        100px   /* value */
-        120px   /* stock */
-        160px   /* days */
-        150px   /* incoming */
-        140px   /* weekly */
-        140px;  /* monthly */
-    align-items: center;
-    padding: 6px 4px;
-    border-bottom: 1px solid #eee;
+      1fr   /* Item */
+      1fr     /* Supplier */
+      150px   /* Cost */
+      150px   /* Value */
+      150px   /* Stock */
+      200px   /* Days */
+      200px   /* Incoming */
+      150px   /* Weekly */
+      150px;  /* Monthly */
 }
-
-/* Header */
-.inv-header {
-    font-weight: bold;
-    background: #ffffff;
-    position: sticky;
-    top: 62px;
-    z-index: 10;
-    border-bottom: 2px solid #ddd;
+.col {
+	height: 20px;
+	padding: 5px 8px;
+    border-right: 1px solid #f9f9f9 !important;
+	border-bottom: 1px solid #f9f9f9 !important;
 }
-
-/* Supplier collapsible block */
-.supplier-block {
-    margin-top: 10px;
-    display: block;
+.c-row .col:first-child {
+    padding-left: 28px;
 }
-
-.supplier-block summary {
-    font-size: 15px;
-    font-weight: bold;
-    padding: 8px 6px;
-    background: #e4e8ec;
-    cursor: pointer;
-    border-radius: 4px;
+/* SPAN HOVER BEHAVIOR */
+.custom_table .col:hover span {
+    visibility: visible;
 }
-
-.supplier-block[open] summary {
-    background: #dbe2e7;
+.custom_table .col span {
+    visibility: hidden;
 }
-
-/* Hover effect */
-.row:hover {
-    background: #f4f8fb;
+.custom_table_col sub {
+    color: #888888;
 }
-
-/* Alerts */
-.alert_red   { background: lightcoral !important; }
-.alert_orange{ background: lightsalmon !important; }
-.alert_green { background: lightgreen !important; }
-.alert_grey  { background: lightgrey !important; }
-
-/* Align left first 2 columns */
-.col.name,
-.col.supplier {
-    text-align: left;
+/* ALERT STYLING */
+.alert_grey {
+	background-color: lightgrey !important;
 }
-
-/* Links */
-a { color: inherit; text-decoration: none; }
+.alert_green {
+	background-color: lightgreen !important;
+}
+.alert_yellow {
+	background-color: lightgoldenrodyellow !important;
+}
+.alert_orange {
+	background-color: lightsalmon !important;
+}
+.alert_red {
+	background-color: lightcoral !important;
+}
+/* CELL STYLING */
+.custom_table .required
+{
+    background: yellow;
+}
+.custom_table .none
+{
+    background: lightgrey;
+}
+.custom_table .special
+{
+    background-color: cyan;
+}
+.custom_table .new_client {
+    background-color: lightgoldenrodyellow;
+}
+/* HOVER BEHAVIOR */
+:root {
+  --on: #f4f8fb;
+  --off: transparent;
+}
+.custom_table {
+  --hover: var(--off);
+}
+.col {
+  background-color: var(--hover);
+}
+.c-row:not(.custom_subheader):has(:not(.col)):hover {
+  --hover: var(--on);
+}
+/* SIDE PANEL BEHAVIOR */
+.custom-container {
+	position: relative;
+}
+/* Base panel: off-screen by default */
+.custom-right {
+  position: fixed;        /* floats over content */
+  top: 0;
+  right: -300px;          /* start hidden outside screen */
+  width: 500px;
+  height: 100%;
+  background: #f8f9fa;    /* light background */
+  box-shadow: -2px 0 6px rgba(0,0,0,0.15);
+  transition: right 1.5s ease; /* smooth slide */
+  padding: 1rem;
+  z-index: 1000;
+}
+/* When active (param is present) */
+.custom-right.active-panel {
+  right: 0;   /* slide into view */
+}
+/* Optional: hide completely when not active */
+.hidden-panel {
+  display: none;
+}

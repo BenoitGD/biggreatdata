@@ -11,7 +11,7 @@
 	top: 62px;
 	z-index: 1;
 	position: sticky;
-    border-bottom: 1px solid #eee!important;
+    border-bottom: 1px solid #eeeeee !important;
 }
 .custom_tab {
     display: flex;
@@ -54,21 +54,21 @@
     //font-size: 16px;
     font-weight: bold;
     padding: 5px 8px;
-	border-right: 1px solid #fbfbfb !important;
+	border-right: 1px solid #f9f9f9 !important;
 }
 .custom_subheader {
     background: #e4e8ec !important;
-    border-bottom: 1px solid #eee!important;
+    border-bottom: 1px solid #eeeeee !important;
 	position: sticky;
     top: 91px;
 }
 .custom_table tr {
 	height: 30px;
-    border-bottom: 1px solid #eee!important;
+    border-bottom: 1px solid #eeeeee !important;
 }
 .custom_table tr td {
 	padding: 5px 8px;
-    border-right: 1px solid #f9f9f9!important;
+    border-right: 1px solid #f9f9f9 !important;
 }
 /* SPAN HOVER BEHAVIOR */
 .indent-row td:first-child {

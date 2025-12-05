@@ -63,7 +63,7 @@
     padding: 5px 8px;
 	border-right: 1px solid #f9f9f9 !important;
 }
-sticky2 {
+.sticky2 {
 	top: 0px;
     position: sticky;
 }

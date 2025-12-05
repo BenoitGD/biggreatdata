@@ -1,4 +1,3 @@
-<style>
 /* SIDE PANEL BEHAVIOR */
 .custom-container {
 	height: calc(100vh - 190px);
@@ -147,4 +146,3 @@ tr:not(.custom_subheader):has(:not(th)):hover {
 }
 /* CSS overwrite */
 .popupboxOuter {padding: 0px !important;}
-</style>

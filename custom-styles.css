@@ -157,4 +157,6 @@ td {
 tr:not(.custom_subheader):has(:not(th)):hover {
   --hover: var(--on);
 }
+/* CSS overwrite */
+.popupboxOuter {padding: 0px !important;}
 </style>

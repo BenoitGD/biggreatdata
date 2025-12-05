@@ -1,8 +1,7 @@
 <style>
 /* SIDE PANEL BEHAVIOR */
 .custom-container {
-    position: relative;
-    height: calc(100vh - 150px);
+	height: calc(100vh - 150px);
     overflow-y: scroll;
 }
 /* Base panel: off-screen by default */

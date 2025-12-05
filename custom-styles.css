@@ -1,4 +1,31 @@
 <style>
+/* SIDE PANEL BEHAVIOR */
+.custom-container {
+    position: relative;
+    height: calc(100vh - 150px);
+    overflow-y: scroll;
+}
+/* Base panel: off-screen by default */
+.custom-right {
+  position: fixed;        /* floats over content */
+  top: 0;
+  right: -300px;          /* start hidden outside screen */
+  width: 500px;
+  height: 100%;
+  background: #f8f9fa;    /* light background */
+  box-shadow: -2px 0 6px rgba(0,0,0,0.15);
+  transition: right 1.5s ease; /* smooth slide */
+  padding: 1rem;
+  z-index: 1000;
+}
+/* When active (param is present) */
+.custom-right.active-panel {
+  right: 0;   /* slide into view */
+}
+/* Optional: hide completely when not active */
+.hidden-panel {
+  display: none;
+}
 .zc-pb-tile-card, .zpcontent-wrapper div.zpelement-wrapper, .zc-pb-page-content-wrapper {
     overflow: visible !important;
 }
@@ -8,7 +35,7 @@
 	z-index: 1;
 }
 .sticky2 {
-	top: 62px;
+	top: 0px;
 	z-index: 1;
 	position: sticky;
     border-bottom: 1px solid #eeeeee !important;
@@ -60,7 +87,7 @@
     background: #e4e8ec !important;
     border-bottom: 1px solid #eeeeee !important;
 	position: sticky;
-    top: 91px;
+    top: 30px;
 }
 .custom_table tr {
 	height: 30px;
@@ -129,30 +156,5 @@ td {
 }
 tr:not(.custom_subheader):has(:not(th)):hover {
   --hover: var(--on);
-}
-/* SIDE PANEL BEHAVIOR */
-.custom-container {
-	position: relative;
-}
-/* Base panel: off-screen by default */
-.custom-right {
-  position: fixed;        /* floats over content */
-  top: 0;
-  right: -300px;          /* start hidden outside screen */
-  width: 500px;
-  height: 100%;
-  background: #f8f9fa;    /* light background */
-  box-shadow: -2px 0 6px rgba(0,0,0,0.15);
-  transition: right 1.5s ease; /* smooth slide */
-  padding: 1rem;
-  z-index: 1000;
-}
-/* When active (param is present) */
-.custom-right.active-panel {
-  right: 0;   /* slide into view */
-}
-/* Optional: hide completely when not active */
-.hidden-panel {
-  display: none;
 }
 </style>

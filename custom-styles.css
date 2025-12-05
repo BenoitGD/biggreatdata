@@ -26,26 +26,9 @@
 .hidden-panel {
   display: none;
 }
-.zc-pb-tile-card, .zpcontent-wrapper div.zpelement-wrapper, .zc-pb-page-content-wrapper {
-    overflow: visible !important;
-}
-.sticky1 {
-	top: 0;
-	position: sticky;
-	z-index: 1;
-}
-.sticky2 {
-	top: 0px;
-	z-index: 1;
-	position: sticky;
-    border-bottom: 1px solid #eeeeee !important;
-}
 .custom_tab {
     display: flex;
 	justify-content: space-around;
-}
-.custom_table a {
-    display: block;
 }
 .view-options li {
     margin-right: 10px;
@@ -96,6 +79,9 @@
 .custom_table tr td {
 	padding: 5px 8px;
     border-right: 1px solid #f9f9f9 !important;
+}
+.custom_table a {
+    display: block;
 }
 /* SPAN HOVER BEHAVIOR */
 .indent-row td:first-child {

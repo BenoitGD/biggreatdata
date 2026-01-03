@@ -116,10 +116,7 @@
 	background-color: lightcoral;
 }
 .status_paid {
-	background-color: #c516ef;
-}
-.status_paid a {
-	color: black !important;
+	background-color: #c516ef21;
 }
 /* CELL STYLING */
 .custom_table td.required

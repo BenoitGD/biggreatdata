@@ -115,6 +115,9 @@
 .alert_red {
 	background-color: lightcoral;
 }
+.status_paid {
+	background-color: #c516ef;
+}
 /* CELL STYLING */
 .custom_table td.required
 {

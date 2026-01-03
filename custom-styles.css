@@ -118,6 +118,9 @@
 .status_paid {
 	background-color: #c516ef;
 }
+.status_paid a {
+	color: black !important;
+}
 /* CELL STYLING */
 .custom_table td.required
 {

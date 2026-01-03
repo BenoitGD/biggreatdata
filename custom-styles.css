@@ -55,8 +55,7 @@
 }
 .custom_table th,
 .custom_table td {
-    box-shadow: inset 0 -0.5px 0 #f9f9f9,
-                inset -0.5px 0 0 #f9f9f9;
+    border-bottom: 1px solid #eee;
 }
 .custom_table th {
     background: #ffffff;
@@ -119,20 +118,23 @@
 	background-color: #c516ef21;
 }
 /* CELL STYLING */
-.custom_table td.required
-{
+.custom_table td.required {
     background: yellow;
 }
-.custom_table td.none
-{
+.custom_table td.none {
     background: lightgrey;
 }
-.custom_table td.special
-{
+.custom_table td.special {
     background-color: cyan;
 }
 .custom_table td.new_client {
     background-color: lightgoldenrodyellow;
+}
+custom_table td.alert, td.alert a {
+    color: red;
+}
+custom_table td.warning a {
+    color: orange;
 }
 /* HOVER BEHAVIOR */
 :root {
@@ -151,3 +153,20 @@ tr:not(.custom_subheader):has(:not(th)):hover {
 /* CSS overwrite */
 .popupboxOuter {padding: 0px !important;}
 .zc-pb-tile-card, .zpcontent-wrapper div.zpelement-wrapper, .zc-pb-page-content-wrapper {overflow: hidden !important;}
+/* CUSTOM SUMMARY PANEL */
+#custom_summary_panel {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+}
+#custom_summary_panel ~ .zc-popover-container.zc-summary-popover {
+	overflow:hidden;
+	max-height:0;
+	transition: max-height .35s ease, opacity .2s ease, transform .35s ease;
+}
+#custom_summary_panel:checked ~ .zc-popover-container.zc-summary-popover {
+	max-height: 800px;
+	transform: translateY(0);
+}

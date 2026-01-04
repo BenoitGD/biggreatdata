@@ -29,6 +29,9 @@
     display: flex;
 	justify-content: space-around;
 }
+.view-options {
+    padding: 0px !important;
+}
 .view-options li {
     margin-right: 10px;
 }
